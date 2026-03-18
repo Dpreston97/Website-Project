@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Myers Mobile Mechanic</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+</head>
+
+<body>
+  <div class="page">
+    <header>
+      <nav class="nav">
+        <div class="logo">
+          <span>Myers Mobile Mechanic</span>
+        </div>
+        <button class="nav-toggle" aria-label="Toggle navigation" onclick="toggleNav()">☰</button>
+        <div class="nav-links" id="navLinks">
+          <a href="#top">Home</a>
+          <a href="#services">Services</a>
+          <a href="#how-it-works">How It Works</a>
+          <a href="#about">About</a>
+          <a href="#contact" class="btn-call"><span>📞</span> Call Now</a>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero -->
+      <section class="section hero" id="top">
+        <div>
+          <div class="hero-copy-eyebrow">On‑site mobile mechanic</div>
+          <h1 class="hero-title">
+            Professional auto repair <span>that comes to you</span>
+          </h1>
+          <p class="hero-sub">
+            Expert mobile mechanic service at your doorstep. From diagnostics to full repairs, we keep you moving—without the tow.
+          </p>
+          <div class="hero-cta-row">
+            <button class="btn-primary" onclick="window.location.href='#contact'"><span>⚡</span>Contact Us</button>
+            <a href="#how-it-works" class="hero-secondary-link">See how it works</a>
+          </div>
+          <div class="hero-badges">
+            <div class="hero-badge">Same‑day appointments</div>
+            <div class="hero-badge">10+ years experience</div>
+          </div>
+        </div>
+        <div class="hero-media">
+          <div class="hero-media-overlay"></div>
+          <div class="hero-media-content">
+          </div>
+        </div>
+      </section>
+
+      <!-- Services -->
+      <section class="section" id="services">
+        <div class="section-title">Our services</div>
+        <h2 class="section-heading">Diagnostics, Repairs & Roadside Help</h2>
+        <p class="section-sub">
+          We bring a fully equipped mobile workshop to your driveway, office, or roadside location—no tow truck required.
+        </p>
+
+        <div class="services-grid">
+          <article class="card">
+            <div class="card-icon">🔧</div>
+            <h3 class="card-title">Diagnostics & repairs</h3>
+            <p class="card-text">Engine, brakes, suspension, electrical issues and more—professionally diagnosed and repaired on‑site.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🛢️</div>
+            <h3 class="card-title">Oil change & maintenance</h3>
+            <p class="card-text">Oil & filter changes, fluid checks, belts, hoses, and tune‑ups to keep your car running strong.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">⚠️</div>
+            <h3 class="card-title">Emergency roadside</h3>
+            <p class="card-text">Jump starts, batteries, lockouts, minor roadside repairs—fast response when you’re stuck.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">💡</div>
+            <h3 class="card-title">Check engine light</h3>
+            <p class="card-text">Full scan tool diagnostics with clear explanations and repair options before any work begins.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🚙</div>
+            <h3 class="card-title">Pre‑purchase inspections</h3>
+            <p class="card-text">We inspect the vehicle where it sits so you know exactly what you’re buying.</p>
+          </article>
+          <article class="card">
+            <div class="card-icon">🧊</div>
+            <h3 class="card-title">AC & cooling</h3>
+            <p class="card-text">AC not blowing cold or engine running hot? We diagnose and repair cooling system issues.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- How it works + Before/After -->
+      <section class="section" id="how-it-works">
+        <div class="section-title">How it works</div>
+        <h2 class="section-heading">Three Simple Steps To Get Back on the Road</h2>
+        <p class="section-sub">
+          No waiting rooms, no towing, no hassle. Just expert mechanics who come to you with everything they need.
+        </p>
+
+        <div class="steps">
+          <div class="step">
+            <div class="step-number">1</div>
+            <div class="step-title">Schedule appointment</div>
+            <p class="step-text">Book online in under 60 seconds or call us to describe the issue.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">2</div>
+            <div class="step-title">We come to you</div>
+            <p class="step-text">A fully equipped mobile mechanic arrives at your home, office, or roadside location.</p>
+          </div>
+          <div class="step">
+            <div class="step-number">3</div>
+            <div class="step-title">Get back on the road</div>
+            <p class="step-text">We complete the repair on‑site and walk you through what was done.</p>
+          </div>
+        </div>
+
+      </section>
+
+      <!-- About -->
+      <section class="section" id="about">
+        <div class="section-title">About us</div>
+        <h2 class="section-heading">Experienced & trusted mobile mechanics</h2>
+        <div class="about-grid">
+          <div class="about-photo">
+            <img src="photos/mmm_logo1.png"  />
+          </div>
+          <div>
+            <p class="about-text">
+              With over <strong>10 years of hands‑on experience</strong>, we bring shop‑level diagnostics and repairs directly to you.
+              Every visit includes clear communication, upfront pricing, and photos of the work performed.
+            </p>
+            <ul class="about-list">
+              <li>Fully mobile service with professional‑grade tools and equipment</li>
+              <li>Transparent estimates before any work begins—no surprise charges</li>
+              <li>Digital invoices and service history for your records</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Reviews -->
+      <section class="section" id="reviews">
+        <div class="section-title">Customer reviews</div>
+        <h2 class="section-heading">Drivers love the convenience</h2>
+        <div class="review-card">
+          <div class="review-stars">★★★★★</div>
+          <p class="review-text">
+            “Fast, convenient, and super professional. They diagnosed my issue in minutes and fixed it right in my driveway.
+            I never had to arrange a tow or sit in a waiting room. Highly recommend!”
+          </p>
+          <div class="review-author">— Sarah M., Honda Civic owner</div>
+        </div>
+      </section>
+
+      <!-- Contact / Service area -->
+      <section class="section" id="contact">
+        <div class="section-title">Contact & service area</div>
+        <h2 class="section-heading">Ready to book your mobile repair?</h2>
+
+        <div class="contact-grid">
+          <div class="contact-card">
+            <strong>Contact us</strong>
+            <div class="contact-row">
+              <div class="contact-label">Phone</div>
+              <div class="contact-value"><a href="tel:15551234567">(555) 123‑4567</a></div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-label">Email</div>
+              <div class="contact-value"><a href="mailto:info@mobileautorepair.com">info@mobileautorepair.com</a></div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-label">Hours</div>
+              <div class="contact-value">Mon–Sat · 7:00am – 9:00pm</div>
+            </div>
+            <div class="contact-row">
+              <div class="contact-label">Response</div>
+              <div class="contact-value">Same‑day appointments available in most areas.</div>
+            </div>
+          </div>
+
+          <div class="map-placeholder">
+            <strong>Service area</strong>
+            <p>We proudly serve Akron, Ohio and surrounding communities, including Cuyahoga Falls, Barberton, Stow, and more.
+New neighborhoods are added regularly — if you're nearby, chances are we’ve got you covered.</p>
+            <div id="service-map" class="map-box"></div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer id="faq">
+      <div class="footer-inner">
+        <div>© 2024 Mobile Auto Repair. All rights reserved.</div>
+        <div class="footer-links">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
