@@ -570,13 +570,17 @@
       align-items: center;
       gap: 0.4rem;
     }
-
+    
     .contact-label {
       width: 70px;
-      font-size: 0.8rem;
+      font-size: rem;
       text-transform: uppercase;
       letter-spacing: 0.12em;
       color: var(--text-muted);
+    }
+
+    strong.contact-stong {
+      font-size: 1.5rem;
     }
 
     .contact-value {
@@ -612,7 +616,7 @@
     footer {
       border-top: 1px solid rgba(255, 255, 255, 0.06);
       padding: 1.25rem 1.25rem 1.75rem;
-      font-size: 0.78rem;
+      font-size: 1.25rem;
       color: var(--text-muted);
       background: #020308;
     }
@@ -627,14 +631,6 @@
       align-items: center;
     }
 
-    .footer-links {
-      display: flex;
-      gap: 0.75rem;
-    }
-
-    .footer-links a {
-      color: var(--text-muted);
-    }
 /* Ultra-wide screens */
 
 @media (min-width: 1600px) {
@@ -685,4 +681,5 @@
     grid-template-columns: 1.3fr 1fr;
     gap: 2.5rem;
   }
+
 }
