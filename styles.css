@@ -306,14 +306,14 @@
       overflow: hidden;
       background: radial-gradient(circle at top, #1b2438, #05070b 70%);
       box-shadow: 0 0 40px rgba(0, 0, 0, 0.9);
-      min-height: 260px;
+      min-height: 290px;
     }
 
     .hero-media::before {
       content: "";
       position: absolute;
       inset: 0;
-      background-image: url("photos/mmm_icon.png");
+      background-image: url("photos/mmm_akronE.png");
       background-size: cover;
       background-position: center;
       opacity: 0.45;
